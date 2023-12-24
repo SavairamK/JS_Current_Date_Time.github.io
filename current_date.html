@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date</title>
+    <style>
+        button{
+            height: 50px;
+            width: 400px;
+            background-color: cadetblue;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="current-date">
+        <button onclick="current_date()">Click Me To Know Today's Date and Time !</button>
+        <h1 id="date"></h1>
+    </div>
+
+
+    <script>
+        function current_date(){
+            document.getElementById('date').innerHTML = "Current date is : "+Date();
+        }
+    </script>
+</body>
+</html>
